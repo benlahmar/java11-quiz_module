@@ -9,6 +9,10 @@ public class Question {
 	int id;
 	String text;
 	boolean ismultip;
+	
+	boolean isselected=false;
+	
+	
 	Set<Response> reponses=new HashSet<>();
 	public int getId() {
 		return id;
@@ -47,6 +51,12 @@ public class Question {
 	@Override
 	public String toString() {
 		return "Question [id=" + id + ", text=" + text + ", ismultip=" + ismultip + ", reponses=" + reponses + "]";
+	}
+	public boolean isIsselected() {
+		return isselected;
+	}
+	public void setIsselected(boolean isselected) {
+		this.isselected = isselected;
 	}
 	
 	

@@ -4,7 +4,11 @@ public class Response {
 
 	int id;
 	String rep;
+	//si la bonne reponse
 	boolean istrue;
+	
+	boolean isanswered=false;
+	
 	public int getId() {
 		return id;
 	}
@@ -36,6 +40,12 @@ public class Response {
 	@Override
 	public String toString() {
 		return "Response [id=" + id + ", rep=" + rep + ", istrue=" + istrue + "]";
+	}
+	public boolean isIsanswered() {
+		return isanswered;
+	}
+	public void setIsanswered(boolean isanswered) {
+		this.isanswered = isanswered;
 	}
 	
 	
